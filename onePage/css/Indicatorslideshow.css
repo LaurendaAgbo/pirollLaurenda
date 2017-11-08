@@ -1,0 +1,21 @@
+#carouselExampleIndicators .carousel-indicators {
+	position: relative;
+	z-index: 15;
+	width: 30px;
+	margin-left: 48%;
+	right: 5%;
+	bottom: 0;
+    top: 30px;
+}
+#carouselExampleIndicators .carousel-indicators li{
+	display: block;
+	width: 10px!important;
+	height: 10px!important;
+    border-radius: 6px;
+    background-color: #b0e8e6!important;
+}
+#carouselExampleIndicators .carousel-indicators .active {
+	width: 12px!important;
+    height: 12px!important;
+	background-color: rgba(255, 255, 255, 1)!important;
+}

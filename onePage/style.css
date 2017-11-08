@@ -1,0 +1,320 @@
+/*****   DEBUT  MAIN     STYLE       *****/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+
+body {
+	height: 100%;
+	font-size: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#about,
+#process, 
+#project-submit,
+#main-footer {
+	padding: 2rem 0;
+}
+
+/*****     DEBUT    MAIN     STYLE       *****/
+
+/****** Début Home  *****/
+
+#home {
+	background: url(http://via.placeholder.com/1600x850) center no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 550px;
+}
+
+#home nav.navbar a.nav-link {
+  color: #191919;
+  text-align: center;  
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+#home nav.navbar a.nav-link:hover, 
+#home nav.navbar li.active a.nav-link {
+  color: #10c9c3;
+}
+
+#heading {
+	position: absolute;
+	padding: 2rem 0;
+	top: 50%;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#heading h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2.4rem;
+	color: #1d1d1d;
+	line-height: 3rem;
+}
+
+#heading p {
+	font-family: "Nunito", sans-serif;
+	font-size: 1rem;
+	color: #787878;
+	line-height: 1.5rem;
+	padding: 0 0 1rem;
+}
+
+.btn.btn-info {
+	background-color: #10c9c3;
+	padding: 1rem 2rem;
+    border-radius: 0px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+/****** Section Home  *****/
+
+/*****     Fin    About      *****/
+
+#about p, 
+#process p, 
+#project-submit p {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1.09rem;
+	color: #787878;
+}
+
+.section-title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.875rem;
+	color: #191919;
+	padding: 0 0 1.5rem;
+}
+
+/*****     Fin    About      *****/
+
+/*****     Début    Work      *****/
+
+#process p {
+	padding: 0 0 1.5rem;
+}
+
+.portfolioItem {
+  position: relative;
+}
+
+.portfolioItem:hover .overlay {
+  opacity: 0.85;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #141414 url(images/oeil.png) no-repeat center center;
+}
+
+.portfolioItem-text {
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+	color: rgba(255, 255, 255, 1);
+}
+
+/*****     Fin    Work      *****/
+
+/*****     Début    Process      *****/
+
+
+
+/*****     Fin    Process      *****/
+
+/*****     Début    Services      *****/
+
+
+
+/*****     Fin    Services      *****/
+
+/*****     Début    Testimonials      *****/
+
+#testimonials {
+	background-color: #10c9c3;
+	padding: 3rem 0;
+}
+
+#testimonials .testimonial-box p {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+}
+
+#testimonials .testimonial-box p span, 
+#testimonials .testimonial-box p em {
+	font-size: 1.4rem;
+}
+
+#testimonials .testimonial-box p span::before {
+	content: "\201C";
+	display:inline-block;
+	margin-right:0.6rem;
+}
+
+#testimonials .testimonial-box p em::before {
+	content: "\201D";
+	display:inline-block;
+	margin-left:0.25rem;
+}
+
+#testimonials .testimonial-box p.client {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+/*****     Fin    Testimonials      *****/
+
+/*****     Début    Project Submit      *****/
+
+#project-submit {
+	background-color: #f5f5f5;
+}
+
+#project-submit p {
+    font-size: 1rem;
+	padding: 0 0 1.5rem;
+}
+
+.form-group {
+	padding: 0;
+    margin-bottom: 1rem;
+}
+
+#project-submit .form-control {
+	border: none;
+    border-radius: 0;
+    padding: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.94rem;
+    margin-bottom: 2rem;
+}
+
+/*****     Fin    Project Submit      *****/
+
+/****	Début  Footer   ****/
+
+#main-footer {
+  background-color: #141414;
+  color: #bcbcbc;
+}
+
+#main-footer a {
+	text-decoration: none;
+    color: #bcbcbc;
+}
+
+#main-footer .widget .widget-title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 25px;
+}
+
+#main-footer .widget ul li {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 0.94rem;
+	letter-spacing: 0.01rem;
+}
+
+#main-footer .widget ul li.contact {
+	font-family: "Work Sans", sans-serif;
+}
+
+/****	FIN  Footer   ****/
+
+/****   DEBUT MEDIA QUERIES    ****/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+	
+}
+
+@media (min-width: 768px) {
+	#about,
+	#process, 
+	#project-submit,
+	#main-footer {
+		padding: 5rem 0;
+	}
+	#testimonials {
+		background-color: #10c9c3;
+		padding: 8rem 0;
+	}
+	#testimonials .testimonial-box p {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+	#testimonials .testimonial-box p span, 
+	#testimonials .testimonial-box p em {
+		font-size: 1.875rem;
+	}
+	#carouselExampleIndicators .carousel-indicators {
+		top: 70px;
+	}
+}
+
+@media (max-width: 767px) {
+	
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	#heading h1 {
+		line-height: 5rem;
+	}
+
+	#heading p {
+		font-size: 1.3rem;
+		padding: 0 0 1.5rem;
+		line-height: 1.7rem;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	
+}
+
+
+/****   FIN MEDIA QUERIES    ****/
