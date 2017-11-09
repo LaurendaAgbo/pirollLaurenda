@@ -5,7 +5,7 @@
 	margin-left: 48%;
 	right: 5%;
 	bottom: 0;
-    top: 30px;
+    top: 35px;
 }
 #carouselExampleIndicators .carousel-indicators li{
 	display: block;
@@ -15,9 +15,7 @@
     background-color: #252525!important;
 }
 #carouselExampleIndicators .carousel-indicators .active {
-	width: 12px!important;
-    height: 12px!important;
-	background-color: rgba(255, 255, 255, 1)!important;
+	background-color: #bcbcbc!important;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -27,6 +25,42 @@
     color: #1d1d1d;
 }
 
-.carousel-control-prev .prev-next {
-	
+.carousel-control-prev .prev-next,
+.carousel-control-next .prev-next {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev:focus, 
+.carousel-control-prev:hover, 
+.carousel-control-next:focus, 
+.carousel-control-next:hover {
+    color: #bcbcbc;
+    opacity: .9;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 28px;
+    color: #1d1d1d;
+}
+
+.carousel-control-prev-icon::before {
+    content: "\f104";
+    font-family: fontawesome;
+}
+
+.carousel-control-next-icon::before {
+    content: "\f105";
+    font-family: fontawesome;
 }
