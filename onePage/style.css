@@ -177,13 +177,6 @@ img {
   background: #141414 url(images/oeil.png) no-repeat center center;
 }
 
-.portfolioItem-text {
-    -webkit-transform: translate(0, 100%);
-    -ms-transform: translate(0, 100%);
-    transform: translate(0, 100%);
-	color: rgba(255, 255, 255, 1);
-}
-
 .load {
 	background-color: #f5f5f5;
 	padding: 1.5rem 0;
@@ -351,7 +344,6 @@ img {
 		margin-bottom: 2rem;
 	}
 	#testimonials {
-		background-color: #10c9c3;
 		padding: 8rem 0;
 	}
 	#testimonials .testimonial-box p {

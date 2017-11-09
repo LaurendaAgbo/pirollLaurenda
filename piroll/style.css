@@ -25,6 +25,7 @@ img {
 	height: auto;
 }
 
+#heading,
 #about,
 #statistic-box,
 #process,
@@ -68,15 +69,16 @@ img {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 5rem 0;
+}
+
+#heading .section-title {
+	padding: 0 0 0.8rem;
+	color: #fff;
 }
 
 #heading p {
-	font-family: "Nunito", sans-serif;
-	font-size: 1rem;
-	color: #787878;
 	line-height: 1.5rem;
-	padding: 0 0 1rem;
+	color: #fff!important;
 }
 
 .btn.btn-info {
@@ -101,6 +103,7 @@ img {
 
 #about p, 
 #process p, 
+#heading p,
 #project-submit p {
 	font-family: "Nunito Sans", sans-serif;
 	font-size: initial;
@@ -127,12 +130,14 @@ img {
 	background-color: #10c9c3;
 }
 
+.skills-image img {
+	height: 100%;
+	width: 100%;
+}
+
 #skills p {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-    font-size: 0.75rem;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
+	font-family: "Nunito Sans", sans-serif;
+	color: #787878;
 }
 
 #statistic-box {
@@ -227,24 +232,33 @@ img {
 /*****     Début    Testimonials      *****/
 
 #testimonials {
-	background-color: #10c9c3;
-	padding: 3rem 0;
+	padding-bottom: 3rem;
 }
 
+#testimonials .testimonial-box {
+	
+	background-color: #f6f6f6;
+}
+
+#testimonials .skills-progress {
+	padding: 1rem;
+}
+ 
 #testimonials .testimonial-box p {
-	color: #fff;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	font-size: 1.1rem;
+	color: #787878;
+	font-family: "Nunito Sans", sans-serif;
 	margin-bottom: 2rem;
 }
 
-#testimonials .testimonial-box p span, 
-#testimonials .testimonial-box p em {
-	font-size: 1.4rem;
+#testimonials .testimonial-box p.skills-details {
+	margin-bottom: 0;
 }
 
-#testimonials .testimonial-box p span::before {
+#testimonials .testimonial-box p span {
+	font-weight: bold;
+}
+
+/* #testimonials .testimonial-box p span::before {
 	content: "\201C";
 	display:inline-block;
 	margin-right:0.6rem;
@@ -254,7 +268,7 @@ img {
 	content: "\201D";
 	display:inline-block;
 	margin-left:0.25rem;
-}
+} */
 
 #testimonials .testimonial-box p.client {
 	font-size: 0.75rem;
@@ -265,10 +279,6 @@ img {
 /*****     Fin    Testimonials      *****/
 
 /*****     Début    Project Submit      *****/
-
-#project-submit {
-	background-color: #f5f5f5;
-}
 
 #project-submit p {
     font-size: 1rem;
@@ -333,6 +343,7 @@ img {
 }
 
 @media (min-width: 768px) {
+	#heading,
 	#about,
 	#statistic-box,
 	#process,
@@ -348,17 +359,12 @@ img {
 		margin-bottom: 2rem;
 	}
 	#testimonials {
-		background-color: #10c9c3;
-		padding: 8rem 0;
-	}
-	#testimonials .testimonial-box p {
-		font-size: 1.5rem;
-		margin-bottom: 2rem;
-	}
+		padding-bottom: 4rem 0;
+	}/* 
 	#testimonials .testimonial-box p span, 
 	#testimonials .testimonial-box p em {
 		font-size: 1.875rem;
-	}
+	} */
 	#carouselExampleIndicators .carousel-indicators {
 		top: 70px;
 	}
@@ -377,12 +383,14 @@ img {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 	#heading p {
-		font-size: 1.3rem;
-		padding: 0 0 1.5rem;
-		line-height: 1.7rem;
+		font-size: 1.125rem;
 	}
 	#about p {
 		font-size: 1.125rem;
+	}
+	#skills .section-title {
+		font-size: 1.875rem;
+		letter-spacing: 0.05rem;
 	}
 }
 
